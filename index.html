@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Pulseband Dashboard</title>
+		<link rel="stylesheet" href="css/reset.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css"/>
+		<link rel="stylesheet" href="css/animate.css"/>
+		<link rel="stylesheet" href="css/hover-min.css" media="all"/>	
+	</head>
+	<body>
+		<header>
+			<div class="top_bar">
+				<img src="img/logo.svg" alt="pulsebandlogo" id="logo" class="animated pulse">
+				<div id="brandname" class="animated fadeIn">pulseband</div>
+				<nav class="clearfix">
+					<div class="menu animated slideInDown">
+						<span class="icon_bar"></span>
+						<span class="icon_bar"></span>
+						<span class="icon_bar"></span>
+					</div>
+					<div class="container">
+						<div>
+							<h1>Menu</h1>
+						</div>	
+						<ul class="options">
+							<li><a href="#"><i class="material-icons share">share</i>SHARE DATA</a></li>
+							<li><a href="#"><i class="fa fa-tachometer"></i>TRACK WEIGHT</a></li>
+							<li><a href="#"><i class="fa fa-trophy"></i>GOALS & TARGETS</a></li>
+							<li><a href="#"><i class="fa fa-lightbulb-o"></i>INSIGHTS</a></li>
+							<li><a href="#"><i class="fa fa-exclamation"></i>ALERTS</a></li>
+							<li><a href="#"><i class="material-icons">notifications_none</i>NOTIFICATIONS</a></li>
+							<li><a href="#"><i class="material-icons">help_outline</i>HELP</a></li>
+							<li><a href="#"><i class="material-icons">settings</i>SETTINGS</a></li>
+							<li><a href="#"><i class="material-icons">person_outline</i>PROFILE</a></li>
+							<li><a href="#"><i class="material-icons">highlight_off</i>LOG OUT</a></li>
+						</ul>
+					</div>	
+				</nav>
+			</div>
+		</header>
+		<section class="info">
+			<h2 class="animated fadeIn">SELECT ICON FOR MORE INFO:</h2>
+			<article class="setting">
+				<a href="#" data-chart="0" class="bp active hvr-fade animated slideInDown"><div class="bp_icon icons"></div></a>
+				<h1 class="animated fadeIn">124/64</h1>
+				<p class="animated fadeIn">mm/HG</p>
+			</article>
+			<article class="setting">
+				<a href="#"  data-chart="1" class="bpm hvr-fade animated slideInDown"><div class="bpm_icon icons"></div></a>
+				<h1 class="animated fadeIn">68</h1>
+				<p class="animated fadeIn">BPM</p>
+			</article>
+			<article class="setting">
+				<a href="#"  data-chart="2" class="hours icons hvr-fade animated slideInDown"></a>
+				<h1 class="animated fadeIn">6.43</h1>
+				<p class="animated fadeIn">HOURS</p>
+			</article>
+			<article class="setting">
+				<a href="#"  data-chart="3" class="steps hvr-fade animated slideInDown"><div class="steps_icon icons"></div></a>
+				<h1 class="animated fadeIn">4,926</h1>
+				<p class="animated fadeIn">STEPS</p>
+			</article>
+		</section>
+		<section class="numbers">
+			<div class="data_container">
+				<div>
+					<h2 id="data_type">BLOOD PRESSURE</h2>
+				</div>
+				<div class="graph wow fadeInLeft">
+					<ul>
+						<li><a href="#">DAY</a></li>
+						<li><a href="#">WEEK</a></li>
+						<li><a href="#">MONTH</a></li>
+						<li><a href="#" class="year">YEAR</a></li>
+					</ul>
+					<img src="img/bpm_graph.svg" alt="">
+					<nav class="navbar">
+						<ul>
+							<li><a href="#" data-chart="0" class="bp2 active hvr-fade wow pulse"></a></li>
+							<li><a href="#"  data-chart="1" class="bpm2 hvr-fade wow pulse"></a></li>
+							<li><a href="#"  data-chart="2" class="hours2 icons hvr-fade wow pulse"></a></li>
+							<li><a href="#"  data-chart="3" class="steps2 hvr-fade wow pulse"></a></li>
+						</ul>
+					</nav>
+				</div>
+				<article class="data wow fadeInRight">
+					<div><img src="img/bp_data.png" class="bp_data"></div>
+					<a href="#" class="shareBtn">SHARE</a>
+				</article>
+			</div>
+		</section>
+		<aside class="social">
+			<h3>STAY UP TO DATE WITH PULSEBAND</h3>
+			<ul>
+				<li><a href="#"><i class="fa fa-facebook fa-lg"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+				<li><a href="#"><i class="fa fa-pinterest-p fa-lg"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube fa-lg"></i></a></li>
+				<li><a href="#"><i class="fa fa-google-plus fa-lg"></i></a></li>
+			</ul>
+		</aside>
+		<footer>
+			<div class="bottom_bar clearfix">
+				<h3>&copy;2015 Pulseband. All rights reserved.</h3>
+				<ul id="terms" class="clearfix">
+					<li><a href="#">PRIVATE POLICY</a></li>
+					<li><a href="#">TERMS OF USE</a></li>
+				</ul>
+			</div>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="js/graph.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+ 			new WOW().init();
+		</script>
+	</body>
+</html>
